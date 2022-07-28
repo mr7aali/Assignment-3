@@ -8,7 +8,7 @@
     <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- style css file -->
-    <link rel="stylesheet" href="googleFont.css">
+    
 
 
     <style>
@@ -16,6 +16,17 @@
         *{
           font-family: 'Poppins', sans-serif;
 
+        }
+        .carousel-item::before{
+          content: " ";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: black;
+          opacity: 0.7;
         }
     </style>
 </head>
@@ -77,12 +88,12 @@
 
                   <!-- item? start  -->
                 
-              <div class="carousel-item active">
+              <div class="carousel-item active" >
                 <img style="height:75vh ;" src="images/cover/cover-1.png" class="d-block w-100 " alt="...">
 
                 <div class="carousel-caption d-flex  flex-column align-items-center justify-content-center h-100">
                   <h1 class="fs-1">Get Started Digital Learning</h1>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  <p>Bangladesh’s first hybrid, millennials focused online learning platform to build a career in business and creative professions. Lead the digital age by building mastery and habits that cultivate work-skills for the future.</p>
                   <button type="button" class="btn btn-primary">Get Started</button>
                 </div>
 
@@ -92,8 +103,8 @@
                 <img style="height:75vh ;" src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
 
                 <div class="carousel-caption d-flex  flex-column align-items-center justify-content-center h-100">
-                  <h1 class="fs-1">Get Started Digital Learning</h1>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  <h1 class="fs-1">Get Started Outsourcing</h1>
+                  <p>Millennials focused online learning platform to build creative careers. Build digital mastery and habits that cultivate work-skills for the future.</p>
                   <button type="button" class="btn btn-primary">Get Started</button>
                 </div>
 
@@ -102,8 +113,8 @@
                 <img style="height:75vh ;" src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
 
                 <div class="carousel-caption d-flex  flex-column align-items-center justify-content-center h-100">
-                  <h1 class="fs-1">Get Started Digital Learning</h1>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  <h1 class="fs-1">Content Creator</h1>
+                  <p>A content creator is someone who creates entertaining or educational material to be expressed through any medium or channel. </p>
                   <button type="button" class="btn btn-primary">Get Started</button>
                 </div>
 
@@ -324,12 +335,62 @@
      <!-- popular corses full div end -->
 
        
-
+     <section class="mb-5">
+        <div>
+          <h1 class="fw-bold">Meet Our Successfull Students</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>
+        <!-- card start -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4  g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/student/student-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sheikh Aali</h5>
+                <p class="card-text">Web Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/student/student-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sadia Islam</h5>
+                <p class="card-text">UIUX Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/student/student-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Imran Hossain</h5>
+                <p class="card-text">Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/student/student-4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bristy Islam</h5>
+                <p class="card-text">Web Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card end-->
+        <p class="text-center">
+          <button class="btn btn-outline-primary ms-auto me-3 d-lg-inline d-sm-none m-5" type="submit">Register</button> 
+        </p> 
+     </section>
 
     </main>
 
+
+
     <!-- Frequently Asked Questions start -->
-       <div class="container mb-5">       
+     <div class="container mb-5">       
             <h1 class="text-center fw-bold mb-5">Frequently Asked Questions</h1>
              <p class="text-center mb-5">When you're looking for an online booking solution for your tours or activities, the chance to have a free demo of the software can be a real asset to your decision making process.
 
@@ -346,7 +407,11 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>The basic difference between CSS Grid Layout and CSS Flexbox Layout</strong>  is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications share some common features, however, and if you have already learned how to use flexbox, the similarities should help you get to grips with Grid.
+                    A simple example can demonstrate the difference between one- and two-dimensional layouts.
+
+                    In this first example, I am using flexbox to lay out a set of boxes. I have five child items in my container, and I have given the flex properties values so that they can grow and shrink from a flex-basis of 150 pixels.
+                    
                   </div>
                 </div>
               </div>
@@ -361,7 +426,7 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>Bootstrap</strong> Bootstrap was developed by Mark Otto and Jacob Thorton during an internal competition at Twitter in August 2011. It is an open-source framework that is used to design responsive websites better, faster, and easier. It is a beginner-friendly and the most popular open-source framework that includes HTML, CSS, and JavaScript. Bootstrap can be used to create web applications with any server-side Technology like Java, PHP, etc., and its responsive design allows platforms like Mobile phones, tablets, and computers. Bootstrap contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, icons, and other interface components. It is based on object-oriented CSS. Bootstrap helps to design and develop website templates quickly.
                   </div>
                 </div>
               </div>
@@ -377,7 +442,9 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>Introduction to the CSS basic box model</strong> When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
+
+                    Every box is composed of four parts (or areas), defined by their respective edges: the content edge, padding edge, border edge, and margin edge.
                   </div>
                 </div>
               </div>
@@ -391,7 +458,16 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>Semantic HTML elements are those that clearly describe their meaning in a human- and machine-readable way.</strong>
+                    HTML was originally created as a markup language to describe documents on the early internet. As the internet grew and was adopted by more people, its needs changed.
+
+                    Where the internet was originally intended for sharing scientific documents, now people wanted to share other things as well. Very quickly, people started wanting to make the web look nicer.
+
+                   Because the web was not initially built to be designed, programmers used different hacks to get things laid out in different ways. Rather than using the < table > < /table > to describe information using a table, programmers would use them to position other elements on a page.
+
+                  As the use of visually designed layouts progressed, programmers started to use a generic “non-semantic” tag like < div >. They would often give these elements a class or id attribute to describe their purpose. For example, instead of < header > this was often written as < div class="header" >.
+
+                  As HTML5 is still relatively new, this use of non-semantic elements is still very common on websites today.
                   </div>
                 </div>
               </div>
@@ -403,7 +479,7 @@
 
 
 
-       </div>
+    </div>
     <!-- Frequently Asked Questions end -->
 
     <!-- sponsore's box start -->
